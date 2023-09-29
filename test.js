@@ -1,6 +1,6 @@
-var http :require('http');
+var http = require('http');
 var onReceive = function(req,res){
-	res.write('<h1> testing aws </h1>);
+	res.write('<h1> testing aws </h1>');
 	res.end();
 };
 var app = http.createServer(onReceive);
